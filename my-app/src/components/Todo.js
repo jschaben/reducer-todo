@@ -5,7 +5,7 @@ const Todo = props => {
     <p
       className="todoItem"
       style={
-        props.todoItem.completed ? { textDecoration: "line-through" } : null
+        props.todoItem.completed ? { textDecoration: "#2541b2 wavy line-through" } : null
       }
       onClick={e => {
         e.preventDefault();

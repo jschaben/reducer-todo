@@ -10,10 +10,10 @@ const TodoForm = props => {
     <>
       <Form>
         <FormGroup row>
-          <Label for="todo" sm={2}>
-            Add Todo
+          <Label for="todo" sm={3}>
+            Add Todo:
           </Label>
-          <Col sm={10}>
+          <Col sm={6}>
             <Input
               value={newTodo}
               onChange={handleChanges}
@@ -25,8 +25,7 @@ const TodoForm = props => {
 
         <div>
           <Button
-            color="secondary"
-            onClick={event => {
+              onClick={event => {
               event.preventDefault();
               props.addTodo(newTodo);
               setNewTodo("");
